@@ -11,12 +11,15 @@ cd Python-3.8.12
 ./configure --enable-optimizations
 make
 
+cd ../..
+ln -s dep/Python-3.8.12/python py38
+
 echo "Get pip"
 wget https://bootstrap.pypa.io/get-pip.py
 
 echo "Install pip"
-./python get-pip.py
+./py38 get-pip.py
 rm get-pip.py
 
-echo "Install depencencies"
-python -m pip install -r ../../dependencies.txt
+echo "Install Apache Flink 1.14.0"
+./py38 -m pip install apache-flink==1.14.0
