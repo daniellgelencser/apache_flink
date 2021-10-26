@@ -19,4 +19,4 @@ echo "Install pip"
 rm get-pip.py
 
 echo "Install depencencies"
-Python-3.8.12/python -m pip install -r ../../dependencies.txt
+python -m pip install -r ../../dependencies.txt
