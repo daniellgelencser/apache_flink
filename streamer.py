@@ -8,7 +8,7 @@ from driver.DataQueue import DataQueue
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Distributed data processing asignment 1')
     parser.add_argument('--host', type=str, default='localhost')
-    parser.add_argument('--port', type=int, default=9999)
+    parser.add_argument('--port', type=int, default=9994)
     parser.add_argument('--budget', type=int, default=100_000_000)
     parser.add_argument('--rate', type=int, default=3000, help='rate in transactions per second')
     parser.add_argument('--generators', type=int, default=16, help='number of generators')
